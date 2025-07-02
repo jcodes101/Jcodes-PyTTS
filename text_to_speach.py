@@ -3,8 +3,10 @@ import tkinter as tk
 from tkinter import *
 import pyttsx3
 
-# speak function
+# var assigned and initialized the TTS function
 engine = pyttsx3.init()
+
+# speak function
 def speaknow():
     engine.say(textv.get())
     engine.runAndWait()
